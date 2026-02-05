@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+  int value;
+
+  value = 'A';
+  printf("%d\n",value);
+
+  value = 'a';
+  printf("%d\n",value);
+
+  return 0;
+
+}

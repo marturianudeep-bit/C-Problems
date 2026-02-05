@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    char mychar1 = 'A';
+    putchar(mychar1);
+
+    char mychar2 = 'Z';
+    putchar(mychar2);
+
+    return 0;
+}

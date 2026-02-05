@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+  
+  float num1 = 2.5;
+  printf("%.1f\n",num1);
+
+  float num2 = 6.75432;
+  printf("%.2f\n",num2);
+
+  return 0;
+
+}

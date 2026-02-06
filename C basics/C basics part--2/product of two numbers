@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int a,b,result;
+
+    a=4;
+    b=5;
+    result=a*b;
+    printf("%d\n",result);
+
+    a=7;
+    b=0;
+    result=a*b;
+    printf("%d\n",result);
+
+    a=-3;
+    b=6;
+    result=a*b;
+    printf("%d\n",result);
+
+    return 0;
+}

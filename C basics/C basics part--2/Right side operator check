@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int N,result;
+
+     scanf("%d",&N);
+
+     result = N >> 1;
+
+     printf("%d",result);
+
+     return 0;
+}

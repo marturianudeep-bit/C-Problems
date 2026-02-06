@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int N,X;
+
+    scanf("%d %d",&N,&X);
+
+    N += X; //N = N + X
+
+    printf("%d",N);
+}

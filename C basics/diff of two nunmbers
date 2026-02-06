@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int a,b,result;
+
+     a=15;
+     b=5;
+     result=a-b;
+     printf("%d\n",result);
+
+     a=20;
+     b=30;
+     result=a-b;
+     printf("%d\n",result);
+
+     a=0;
+     b=8;
+     result=a-b;
+     printf("%d\n",result);
+
+     return 0;
+}

@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int seats;
+    scanf("%d",&seats);
+    if(seats > 0)
+        printf("Confident");
+        else
+           printf("Waiting List");
+
+           return 0;
+}

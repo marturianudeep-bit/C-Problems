@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int t;
+    scanf("%d",&t);
+    if(t < 20)
+      printf("Heating Mode");
+      else if(t <= 30)
+        printf("normal mode");
+        else
+           printf("Cooling Mode");
+
+           return 0;
+}

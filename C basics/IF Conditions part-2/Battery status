@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int b;
+    scanf("%d",&b);
+
+    if(b < 20)
+        printf("Low Battery");
+        else
+           printf("Battery OK");
+
+           return 0;
+
+}

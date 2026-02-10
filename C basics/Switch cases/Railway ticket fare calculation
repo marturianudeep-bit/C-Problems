@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main(){
+    int ClassType, age;
+    float fare = 0;
+
+    scanf("%d",&ClassType);
+    scanf("%d",&age);
+
+    switch (ClassType){
+        case 1:
+            fare = 300;
+
+            if(age < 12){
+                fare = fare * 0.5;
+            }
+             else if(age >= 60){
+                fare = fare * 0.67;
+             }
+             break;
+
+             case 2:
+                fare = 1000;
+
+                if(age < 12){
+                    fare = fare * 0.5;
+                }
+                break;
+                 
+            default:
+              printf("Invalid Class");
+              return 0;
+    }
+       printf("fare ₹%.0f\n",fare);
+
+        return 0;
+
+}

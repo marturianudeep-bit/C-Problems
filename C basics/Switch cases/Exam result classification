@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int marks,attendence;
+
+    scanf("%d",&marks);
+    scanf("%d",&attendence);
+
+    if(attendence < 75){
+        printf("Fail");
+    }
+      else {
+        if(marks >= 75){
+            printf("Distinction");
+        }
+        else if(marks >= 50){
+            printf("Pass");
+        }
+        else{
+            printf("Fail");
+        }
+      }
+      return 0;
+}

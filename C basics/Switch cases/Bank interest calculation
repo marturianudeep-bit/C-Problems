@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int accountType,years;
+    int interestrate = 0;
+
+    scanf("%d",&accountType);
+    scanf("%d",&years);
+
+    switch(accountType){
+        case 1:
+         interestrate = 4;
+         break;
+         case 2:
+          if(years <= 3){
+            interestrate = 5;
+          }else{
+            interestrate = 7;
+          }
+          break;
+          
+          default:
+          printf("Invalid accountType");
+          return 0;
+    }
+      printf("Interest %d%%\n",interestrate);
+
+      return 0;
+}

@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(){
+    int attempt,marks;
+
+    printf("Enter Attempt Number (1-3): ");
+    scanf("%d",&attempt);
+
+    printf("Enter Marks (0-100): ");
+    scanf("%d",&marks);
+
+    switch(attempt){
+        if(marks >= 80)
+          printf("Excellent\n");
+          else
+            printf("Not Qualified\n");
+            break;
+
+            case 2:
+             if(marks >= 60)
+               printf("Good\n");
+               else
+                 printf("Not Qualified\n");
+                 break;
+
+                 case 3:
+                   printf("Needs Improvement\n");
+                   break;
+
+                   default:
+                    printf("Invalid Attempt Number\n");
+    }
+    return 0;
+}

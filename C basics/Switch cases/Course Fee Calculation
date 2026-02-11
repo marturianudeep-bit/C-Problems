@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main(){
+    int mode;
+    char category;
+
+    printf("Enter course mode (1-Online , 2-Offline):");
+    scanf("%d",&mode);
+
+    printf("Enter student category (R-Regular, S-Scholarship):");
+    scanf(" %c",&category);
+
+    switch(mode){
+        case 1:
+            switch(category){
+                case 'R':
+                case 'r':
+                printf("Course Fee: ₹5000\n");
+                break;
+
+                case 'S':
+                case 's':
+                printf("Course Fee: ₹3000\n");
+                break;
+
+                default:
+                   printf("Invalid student category!\n");
+            }
+            break;
+
+            case 2:
+            switch(category){
+                case 'R':
+                case 'r':
+                  printf("Course Fee: ₹9000\n");
+                  break;
+                  case 'S':
+                  case 's':
+                  printf("Course Fee: ₹7000\n");
+                  break;
+
+                  default:
+                  printf("Invalid student category!\n");
+            }
+            break;
+
+            default:
+               printf("Invalid course mode!\n");
+    }
+    return 0;
+}

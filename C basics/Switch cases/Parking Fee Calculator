@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int vechileType,hours;
+    int rate,totalfee;
+
+    printf("Enter vechileType (1-bike,2-car): ");
+    scanf("%d",&vechileType);
+
+    printf("Enter parkinghours(1-24): ");
+    scanf("%d",&hours);
+
+    switch(vechileType){
+        case 1:
+          rate = 10;
+          break;
+          case 2:
+           rate = 20;
+           break;
+
+           default:
+             rate = 20;
+    }
+    totalfee = rate * hours;
+    printf("Total parking fee = ₹%d\n",totalfee);
+
+    return 0;
+}

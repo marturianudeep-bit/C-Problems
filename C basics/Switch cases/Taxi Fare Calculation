@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+     int vechileType,distance;
+     int ratePerKm = 0;
+     int Fare;
+
+     scanf("%d",&vechileType);
+     scanf("%d",&distance);
+
+     switch(vechileType){
+        case 1:
+          ratePerKm = 10; //Mini
+          break;
+
+          case 2:
+           ratePerKm = 15; //Sedan
+           break;
+
+           case 3:
+            ratePerKm = 20; //SUV
+            break;
+
+            default:
+             ratePerKm = 0;
+
+     }
+       Fare = ratePerKm * distance;
+       printf("%d",Fare);
+
+       return 0;
+
+}

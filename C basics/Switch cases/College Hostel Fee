@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int roomType;
+    int charge;
+
+    scanf("%d",&roomType);
+
+    switch(roomType){
+        case 1:
+        charge = 80000; //single
+        break;
+
+        case 2:
+         charge = 60000; //double
+         break;
+
+         case 3:
+          charge = 45000; //triple
+           break;
+
+           default:
+            charge = 0;
+          
+    }
+    printf("Hostel Fee ₹%d",charge);
+
+    return 0;
+}

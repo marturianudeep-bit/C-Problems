@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int violationType;
+    int fine;
+
+    scanf("%d",&violationType);
+
+    switch(violationType){
+        case 1:
+         fine = 1000; //No Helment
+         break;
+
+         case 2:
+           fine = 1500; //Signal Jump
+           break;
+
+           case 3:
+            fine = 2000; //Over Speeding
+            break;   
+
+            default:
+               fine = 0;
+    }
+     printf("Fine ₹%d",fine);
+     
+     return 0;
+
+}

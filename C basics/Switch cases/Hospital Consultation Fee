@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int doctorType;
+    int cost = 0;
+
+    scanf("%d",&doctorType);
+    
+     switch(doctorType){
+        case 1:
+          cost = 500; //General Physician
+          break;
+
+          case 2:
+            cost = 1200; //Specialist
+            break;
+
+            default:
+             printf("Invalid doctorType");
+             return 0;
+     }
+     printf("Consulation Fee ₹%d",cost);
+     return 0;
+}

@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int courseType;
+    int fee = 0;
+
+    scanf("%d",&courseType);
+
+    switch(courseType){
+        case 1:
+          fee = 0; //free course
+          break;
+
+          case 2:
+            fee = 500; //paid course
+            break;
+
+            default:
+             printf("Invalid courseType");
+             return 0;
+    }
+     printf("Certificate Fee ₹%d",fee);
+     return 0;
+}

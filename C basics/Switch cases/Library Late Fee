@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int bookType,daysLate;
+    int feePerDay = 0,totalFee;
+
+    scanf("%d",&bookType);
+    scanf("%d",&daysLate);
+
+    switch(bookType){
+        case 1:
+         feePerDay = 2;
+         break;
+
+         case 2:
+          feePerDay = 5;
+          break;
+    
+    default:
+      printf("Invalid Book Type");
+      return 0;
+}
+   totalFee = feePerDay * daysLate;
+
+   printf("Late Fee ₹%d",totalFee);
+
+   return 0;
+}

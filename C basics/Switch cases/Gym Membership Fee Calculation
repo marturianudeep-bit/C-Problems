@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+    int durationType;
+    int charge;
+
+    scanf("%d",&durationType);
+
+    switch(durationType){
+        case 1:
+          charge = 1500; //1 Month
+          break;
+
+          case 2:
+            charge = 4000; //3 Months
+            break;
+
+            case 3:
+              charge = 7000; //6 months
+              break;
+
+              default:
+              charge = 0;
+
+
+    }
+     printf("Membership Fee ₹%d",charge);
+
+     return 0;
+}

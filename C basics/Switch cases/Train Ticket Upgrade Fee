@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int classType;
+    int cost = 0;
+
+    scanf("%d",&classType);
+
+    switch(classType){
+        case 1:
+         cost = 300; //slepper
+         break;
+
+         case 2:
+          cost = 800; //3AC
+          break;
+
+          case 3:
+          cost = 1500; //2AC
+          break;
+
+          default:
+             printf("Invalid ClassType");
+             return 0;
+        
+    }
+    printf("Upgrade Fee ₹%d",cost);
+    return 0;
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int planType;
+    int speed = 0;
+
+    scanf("%d",&planType);
+
+    switch(planType){
+        case 1:
+          speed = 40; //basic
+          break;
+
+          case 2:
+            speed = 100; //Standard
+            break;
+
+            case 3:
+            speed = 300; //Premium
+            break;
+
+            default:
+             printf("Invalid Plan type");
+             return 0;
+    }
+     printf("Speed %d Mbps ",speed);
+     return 0;
+}

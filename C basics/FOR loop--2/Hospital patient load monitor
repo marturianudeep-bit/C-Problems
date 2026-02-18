@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int N;
+    int patients;
+    int total = 0;
+    int overcrowded = 0;
+
+    scanf("%d",&N);
+
+    for(int i = 0; i < N; i++){
+        scanf("%d",&patients);
+        total += patients;
+
+        if(patients > 100){
+            overcrowded++;
+        }
+    }
+    printf("Total patients: %d\n",&total);
+    printf("overcrowded Days: %d\n",overcrowded);
+
+    return 0;
+}

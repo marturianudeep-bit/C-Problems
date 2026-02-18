@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int N;
+    int price;
+    int highest;
+    int highDays = 0;
+
+    scanf("%d",&N);
+    scanf("%d",&highest);
+
+    if(highest > 100){
+        highest++;
+    }
+    for(int i = 1; i < N; i++){
+        scanf("%d",&price);
+        if(price > highest){
+            highest = price;
+        }
+        if(price > 100){
+            highDays++;
+        }
+    }
+     printf("Highest Price: %d\n",highest);
+     printf("High price Days: %d\n",highDays);
+
+     return 0;
+}

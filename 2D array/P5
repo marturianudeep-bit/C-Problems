@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int R, C;
+    scanf("%d %d", &R, &C);
+
+    int arr[R][C];
+    int rowSum[R];
+
+  
+    for(int i = 0; i < R; i++) {
+        rowSum[i] = 0;
+        for(int j = 0; j < C; j++) {
+            scanf("%d", &arr[i][j]);
+            rowSum[i] += arr[i][j];  // Calculate row sum
+        }
+    }
+
+    
+    int maxSum = rowSum[0];
+    int minSum = rowSum[0];
+
+    
+    for(int i = 1; i < R; i++) {
+        if(rowSum[i] > maxSum)
+            maxSum = rowSum[i];
+        if(rowSum[i] < minSum)
+            minSum = rowSum[i];
+    }
+
+  
+    int maxDiff = abs(maxSum - minSum);
+
+    printf("%d\n", maxDiff);
+
+    return 0;
+}

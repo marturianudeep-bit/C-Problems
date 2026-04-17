@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int R, C;
+    scanf("%d %d", &R, &C);
+
+    int matrix[R][C];
+    
+  
+    for(int i = 0; i < R; i++) {
+        for(int j = 0; j < C; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    int rowSum[R];
+    for(int i = 0; i < R; i++) {
+        rowSum[i] = 0;
+        for(int j = 0; j < C; j++) {
+            rowSum[i] += matrix[i][j];
+        }
+    }
+    int maxSum = rowSum[0];
+    int minSum = rowSum[i];
+    for(int i = 1; i < R; i++) {
+        if(rowSum[i] > maxSum)
+            maxSum = rowSum[i];
+        if(rowSum[i] < minSum)
+            minSum = rowSum[i];
+    }
+    int result = abs(maxSum - minSum);
+
+    printf("%d\n", result);
+
+    return 0;
+}
